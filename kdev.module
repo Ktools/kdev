@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * Drupal needs this blank file.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function kdev_menu() {
+  $items = array();
+
+  $items['admin/config/ktools/kdev'] = array(
+    'title' => 'Kdev',
+    'description' => 'Kdev configuration.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('kdev_admin_config_form'),
+    'access arguments' => array('access administration pages'),
+    'file' => 'kdev.admin.inc',
+  );
+  
+  return $items;
+}

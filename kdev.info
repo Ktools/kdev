@@ -1,0 +1,15 @@
+name = Kdev
+description = Developer tools.
+core = 7.x
+package = KTools
+version = 7.x-1.x
+project = kdev
+dependencies[] = admin_devel
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = devel
+dependencies[] = devel_info
+dependencies[] = devel_themer
+dependencies[] = ktools
+dependencies[] = simplehtmldom
+features[features_api][] = api:1
